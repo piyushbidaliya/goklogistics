@@ -5,7 +5,7 @@ import linkedin from './linkedin.svg'
 
 
 const SOCIALS = {
-  title: "Social",
+  title: "Follow us on",
   links: [
     twitter,
     facebook,

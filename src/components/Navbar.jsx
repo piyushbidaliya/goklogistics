@@ -6,18 +6,18 @@ function Navbar() {
   const [isLocationOpen, setIsLocationOpen] = useState(false);
 
   return (
-    <nav>
-      <ul className="list-none bg-black text-white">
+    <nav className='bg-black'>
+      <ul className="list-none max-w-[1170px] mx-auto text-white px-8 py-4">
         <li className="inline-block p-2.5 hover:bg-blue-400 border-r-[0.5px] border-r-[#383838]">Home</li>
 
         <li
-          className="inline-block p-2.5 relative border-r-[0.5px] border-r-[#383838]"
+          className="hover:bg-blue-400 inline-block p-2.5 relative border-r-[0.5px] border-r-[#383838]"
           onMouseEnter={() => setIsAboutUsOpen(true)}
           onMouseLeave={() => setIsAboutUsOpen(false)}
         >
           About Us
           {isAboutUsOpen && (
-            <ul className="absolute left-0 bg-black text-white border-r-[0.5px] border-r-[#383838]">
+            <ul className="absolute z-[10000] left-0 bg-black text-white border-r-[0.5px] border-r-[#383838]">
               <li className="block p-2.5 hover:bg-blue-400">Overview</li>
               <li className="block p-2.5 hover:bg-blue-400">Mission & Vision</li>
               <li className="block p-2.5 hover:bg-blue-400">Advantage</li>
@@ -27,13 +27,13 @@ function Navbar() {
         </li>
 
         <li
-          className="inline-block p-2.5 relative border-r-[0.5px] border-r-[#383838]"
+          className="inline-block p-2.5 relative border-r-[0.5px] border-r-[#383838] hover:bg-blue-400"
           onMouseEnter={() => setIsProductOpen(true)}
           onMouseLeave={() => setIsProductOpen(false)}
         >
           Product and Services
           {isProductOpen && (
-            <ul className="absolute left-0 bg-black text-white border-r-[0.5px] border-r-[#383838]">
+            <ul className="absolute z-[10000] left-0 bg-black text-white border-r-[0.5px] border-r-[#383838]">
               <li className="block p-2.5 hover:bg-blue-400">Freight Forwarding</li>
               <li className="block p-2.5 hover:bg-blue-400">Shipping Schedule</li>
               <li className="block p-2.5 hover:bg-blue-400">Consolidation & Deconsolidation</li>
@@ -48,13 +48,13 @@ function Navbar() {
         </li>
 
         <li
-          className="inline-block p-2.5 relative border-r-[0.5px] border-r-[#383838]"
+          className="inline-block p-2.5 relative border-r-[0.5px] border-r-[#383838] hover:bg-blue-400"
           onMouseEnter={() => setIsLocationOpen(true)}
           onMouseLeave={() => setIsLocationOpen(false)}
         >
           Our Location and Network
           {isLocationOpen && (
-            <ul className="absolute left-0 bg-black text-white border-r-[0.5px] border-r-[#383838]">
+            <ul className="absolute z-[10000] left-0 bg-black text-white border-r-[0.5px] border-r-[#383838]">
               <li className="block p-2.5 hover:bg-blue-400">Domestic</li>
               <li className="block p-2.5 hover:bg-blue-400">International</li>
             </ul>

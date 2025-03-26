@@ -1,22 +1,27 @@
 
  const FOOTER_LINKS = [
   {
-    title: "Learn More",
+    title: "About Gok Logistics",
     links: [
+      "Home",
       "About Us",
-      "Categories",
-      "Exchange Policy",
-      "Order Now",
-      "FAQ",
-      "Privacy Policy",
+      "Mission & Vision",
+      "Product and Services",
+      "Career",
+      "Contact Us",
     ],
   },
   {
-    title: "Our Community",
+    title: "Our Services",
     links: [
-      "Terms and Conditions",
-      "Special Offers",
-      "Customer Reviews",
+      "Freight Forwarding",
+      "Consolidation & Deconsolidation",
+      "Warehousing Services",
+      "Express Services",
+      "Transportation Management",
+      "Vendor Managed Inventory",
+      "Inward Logistics Integration",
+      "Project Cargo and Break Bulk",
     ],
   },
 ];

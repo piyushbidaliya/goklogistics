@@ -4,10 +4,10 @@ import  SOCIALS  from '../assets/socials'
 
 const Footer = () => {
   return (
-    <footer className='flex justify-center items-center pb-24 pt-20 relative'>
-      <div className='max_padd_container flex w-full flex-col gap-14'>
-        <div className='flex flex-col items-start justify-center gap-[10%] md:flex-row'>
-          <Link to="/" className='mb-10 bold-20'>Shopee</Link>
+    <footer className='flex justify-center items-center mt-16 relative bg-[#2f2e2e] p-8'>
+      <div className='max-w-[1170px] mx-auto flex w-full flex-col gap-4'>
+        <div className='flex flex-col md:flex-row gap-[10%] text-white'>
+          <Link to="/" className='mb-10 bold-20'>Copyright © 2018 Gok Logistics Pvt. Ltd. <br />All Rights Reserved.</Link>
           <div className='flex flex-wrap gap-8 sm:justify-between md:flex-1'>
             {FOOTER_LINKS.map((col)=>(
               <FooterColumn title={col.title} key={col.title}>

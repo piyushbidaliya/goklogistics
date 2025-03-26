@@ -2,32 +2,32 @@ import React from 'react'
 import cargo from '../assets/cargotruck.jpg'
 function HomeContent() {
   return (
-    <section className='w-full flex gap-2 lg:flex-row flex-col'>
+    <section className='w-full flex gap-2 lg:flex-row flex-col max-w-[1170px] mx-auto px-8 py-4'>
         <div className='lg:w-1/4 w-full'>
             <h2 className='text-blue-400 uppercase'>Quick Contact</h2>
-            <div className='m-4'>
+            <div className='border-1 p-2 block h-[250px]'>
                 <form action="">
                     <div className='flex justify-between'>
-                        <label>Your Name</label>
-                        <input type="text" className='border-2'/>
+                        <label className='text-[14px]'>Your Name</label>
+                        <input type="text" className='border-2 mb-4'/>
                     </div>
                     <div className='flex justify-between'>
-                        <label>Email</label>
-                        <input type="email" className='border-2'/>
+                        <label className='text-[14px]'>Email</label>
+                        <input type="email" className='border-2 mb-4'/>
                     </div>
                     <div className='flex justify-between'>
-                        <label>Phone/Cell</label>
-                        <input type="number" className='border-2'/>
+                        <label className='text-[14px]'>Phone/Cell</label>
+                        <input type="number" className='border-2 mb-4'/>
                     </div>
                     <div className='flex justify-between'>
-                        <label>Message</label>
-                        <textarea name="message" className='border-2'></textarea>
+                        <label className='text-[14px]'>Message</label>
+                        <textarea name="message" className='border-2 mb-4'></textarea>
                     </div>
                     <button className='bg-red-500 px-4 float-end'>Submit</button>
                 </form>
             </div>
 
-            <div className='block bg-blue-400 text-white'>
+            <div className='block bg-blue-400 text-white mt-12'>
                 <h2>Shipping Schedule</h2>
                 <p>Nhava Sheva-Singapore <a href="#">click to open</a></p>
                 <p>Chennai-Singapore <a href="#">click to open</a></p>
