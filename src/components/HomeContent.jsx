@@ -71,7 +71,8 @@ This is because the train transportation services are very popular around the wo
             <p className='text-justify font-bold'>3PL Services, Supply Chain Management, International Courier Services, Air Freight Logistics, Sea Freight Forwarding Service, Domestic Distribution, Cargo Handling Services, Break Bulk Cargo, Transportation Services in India, Trucking Services in India</p>
 
             <div>
-                
+                <button className='bg-slate-500 hover:bg-blue-400 m-2 px-4'>Domestic</button>
+                <button className='bg-slate-500 hover:bg-blue-400 m-2 px-4'>International</button>
             </div>
         </div>
     </section>
