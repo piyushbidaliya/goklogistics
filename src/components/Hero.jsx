@@ -1,21 +1,7 @@
+// src/components/Hero.jsx
 import React, { useState, useEffect } from "react";
-import hero1 from '../assets/hero1.jpg'
-import hero2 from '../assets/hero2.jpg'
-import hero3 from '../assets/hero3.jpg'
 
-const images = [
-  {
-    src: hero1,
-  },
-  {
-    src: hero2,
-  },
-  {
-    src: hero3,
-  },
-];
-
-const Hero = () => {
+const Hero = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -24,10 +10,10 @@ const Hero = () => {
     }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images]);
 
   return (
-    <div className="relative w-full ">
+    <div className="relative w-full">
       <div className="relative w-full aspect-[16/9] md:h-[600px]">
         {images.map((image, index) => (
           <div
@@ -42,9 +28,10 @@ const Hero = () => {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black opacity-50 flex items-center">
-              <p className="text-white text-4xl font-bold uppercase pl-[13%]">We can deliver <br />your cargo worldwide</p>
+              <p className="text-white text-4xl font-bold uppercase pl-[13%]">
+                We can deliver <br /> your cargo worldwide
+              </p>
             </div>
-            
           </div>
         ))}
       </div>
